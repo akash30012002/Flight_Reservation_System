@@ -1,8 +1,8 @@
 
 public class Passenger {
 	
-	Contact contact;
-	Address address;
+	private Contact contact;
+	private Address address;
 	
 	
 	Passenger(String name, String phoneNumber, String email, String street, String city, String state){

@@ -1,7 +1,7 @@
 
 public class Regular extends Ticket{
 
-	String specialServices;
+	private String specialServices;
 	
 
 	public Regular(String pnr, String source, String destination, Flight flight, String departureDateTime,

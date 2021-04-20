@@ -1,16 +1,16 @@
 
 public class Ticket {
 
-	String pnr;
-	String source;
-	String destination;
-	Flight flight;
-	String departureDateTime;
-	String arrivalDateTime;
-	Passenger passenger;
-	String seatNo;
-	float price;
-	boolean isCancelled;
+	private String pnr;
+	private String source;
+	private String destination;
+	private Flight flight;
+	private String departureDateTime;
+	private String arrivalDateTime;
+	private Passenger passenger;
+	private String seatNo;
+	private float price;
+	private boolean isCancelled;
 	
 	
 	public Ticket(String pnr, String source, String destination, Flight flight, String departureDateTime,
@@ -49,6 +49,86 @@ public class Ticket {
 	
 	public void cancelTicket() {
 		this.isCancelled = true;
+	}
+
+	public String getPnr() {
+		return pnr;
+	}
+
+	public void setPnr(String pnr) {
+		this.pnr = pnr;
+	}
+
+	public String getSource() {
+		return source;
+	}
+
+	public void setSource(String source) {
+		this.source = source;
+	}
+
+	public String getDestination() {
+		return destination;
+	}
+
+	public void setDestination(String destination) {
+		this.destination = destination;
+	}
+
+	public Flight getFlight() {
+		return flight;
+	}
+
+	public void setFlight(Flight flight) {
+		this.flight = flight;
+	}
+
+	public String getDepartureDateTime() {
+		return departureDateTime;
+	}
+
+	public void setDepartureDateTime(String departureDateTime) {
+		this.departureDateTime = departureDateTime;
+	}
+
+	public String getArrivalDateTime() {
+		return arrivalDateTime;
+	}
+
+	public void setArrivalDateTime(String arrivalDateTime) {
+		this.arrivalDateTime = arrivalDateTime;
+	}
+
+	public Passenger getPassenger() {
+		return passenger;
+	}
+
+	public void setPassenger(Passenger passenger) {
+		this.passenger = passenger;
+	}
+
+	public String getSeatNo() {
+		return seatNo;
+	}
+
+	public void setSeatNo(String seatNo) {
+		this.seatNo = seatNo;
+	}
+
+	public float getPrice() {
+		return price;
+	}
+
+	public void setPrice(float price) {
+		this.price = price;
+	}
+
+	public boolean getIsCancelled() {
+		return isCancelled;
+	}
+
+	public void setIsCancelled(boolean isCancelled) {
+		this.isCancelled = isCancelled;
 	}
 	
 }

@@ -1,10 +1,10 @@
 
 public class Flight {
 
-	String flightNo;
-	String airline;
-	int capacity;
-	int seatsBooked;
+	private String flightNo;
+	private String airline;
+	private int capacity;
+	private int seatsBooked;
 	
 	
 	public Flight(String flightNo, String airline, int capacity, int seatsBooked) {
@@ -24,6 +24,38 @@ public class Flight {
 	
 	public void updateSeatsBooked() {
 		this.seatsBooked++ ;
+	}
+
+	public String getFlightNo() {
+		return flightNo;
+	}
+
+	public void setFlightNo(String flightNo) {
+		this.flightNo = flightNo;
+	}
+
+	public String getAirline() {
+		return airline;
+	}
+
+	public void setAirline(String airline) {
+		this.airline = airline;
+	}
+
+	public int getCapacity() {
+		return capacity;
+	}
+
+	public void setCapacity(int capacity) {
+		this.capacity = capacity;
+	}
+
+	public int getSeatsBooked() {
+		return seatsBooked;
+	}
+
+	public void setSeatsBooked(int seatsBooked) {
+		this.seatsBooked = seatsBooked;
 	}
 	
 }

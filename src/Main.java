@@ -13,11 +13,11 @@ public class Main {
 		Ticket ticket3 = new Ticket("abcd", "Delhi", "mumbai", indigo320, "1/1/2021 5:50",
 				"1/1/2021 5:50", passenger, "A1", 5400, false);
 		
-		System.out.println(ticket1.isCancelled);
-		System.out.println(ticket2.isCancelled);
-		System.out.println(ticket3.isCancelled);
+		System.out.println(ticket1.getIsCancelled());
+		System.out.println(ticket2.getIsCancelled());
+		System.out.println(ticket3.getIsCancelled());
 		
-		System.out.println(indigo320.seatsBooked);
+		System.out.println(indigo320.getSeatsBooked());
 		System.out.println(indigo320.checkAvailability());
 	}
 

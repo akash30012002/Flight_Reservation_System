@@ -1,8 +1,8 @@
 
 public class Tourist extends Ticket {
 	
-	String hotelAddress;
-	String[] touristLocations = new String[5];
+	private String hotelAddress;
+	private String[] touristLocations = new String[5];
 	
 	
 	public Tourist(String pnr, String source, String destination, Flight flight, String departureDateTime,
@@ -35,6 +35,22 @@ public class Tourist extends Ticket {
 				break;
 			}
 		}
+	}
+
+	public String getHotelAddress() {
+		return hotelAddress;
+	}
+
+	public void setHotelAddress(String hotelAddress) {
+		this.hotelAddress = hotelAddress;
+	}
+
+	public String[] getTouristLocations() {
+		return touristLocations;
+	}
+
+	public void setTouristLocations(String[] touristLocations) {
+		this.touristLocations = touristLocations;
 	}
 	
 }
